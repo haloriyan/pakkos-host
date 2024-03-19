@@ -1,0 +1,145 @@
+.Top {
+    gap: 40px;
+}
+.TopLeft {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+}
+.TopTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+.Input {
+    border-radius: 999px;
+    padding: 0px 20px;
+    height: 32px !important;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    width: 300px;
+}
+.Cover {
+    height: 60px;
+    aspect-ratio: 16/9;
+    background-color: #ddd;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.SectionTitle {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+}
+.LabelTitle,.LabelDescription {
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+}
+.LabelDescription {
+    color: #717171;
+}
+
+.LeftMenu {
+    position: fixed;
+    top: 180px;left: 40px;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.MenuItem {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Active {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+.PhotoArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+}
+.PhotoItem {
+    display: flex;
+    flex-grow: 1;
+    height: 150px;
+    aspect-ratio: 16/9;
+    background-color: #eee;
+}
+.PhotoItem img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 480px) {
+    .Top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .TopLeft {
+        flex-grow: 1;
+        width: 100%;
+    }
+    .Input {
+        width: 100%;
+    }
+    .TopInputs {
+        flex-direction: column;
+    }
+    .ListingContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ListingCard {
+        padding: 10px;
+        padding-bottom: 20px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+    }
+    .ListingCover {
+        width: 100%;
+        aspect-ratio: 5/2;
+        border-radius: 12px;
+        background-color: #eee;
+        object-fit: cover;
+    }
+    .ListingTitle {
+        font-size: 16px;
+        color: #222;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .ListingInfo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 14px;
+        color: #717171;
+        margin-top: 5px;
+    }
+
+    .LeftMenu {
+        width: 100%;
+        left: 0px;right: 0px;
+        display: none;
+    }
+
+    .PhotoArea {
+        flex-direction: column;
+    }
+}

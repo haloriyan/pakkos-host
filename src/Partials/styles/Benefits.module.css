@@ -1,0 +1,67 @@
+.Container {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.IllustrationArea {
+    width: 40%;
+    display: flex;
+}
+.Illustration {
+    width: 100%;
+}
+.Title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #222;
+}
+.Description {
+    color: #717171;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.Item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.ItemContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 5px;
+}
+.ItemTitle {
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+}
+.ItemDescription {
+    font-size: 14px;
+    color: #717171;
+}
+
+@media (max-width: 480px) {
+    .Title {
+        font-size: 20px;
+    }
+    .Container {
+        flex-direction: column-reverse;
+        padding: 20px;
+        align-items: center;
+    }
+    .IllustrationArea {
+        width: 60%;
+    }
+}
